@@ -1,0 +1,49 @@
+#
+# system.prop for lt02wifi
+#
+# Boot quickly & additionally it disables the boot animation too
+debug.sf.nobootanimation=1
+ro.config.hw_quickpoweron=true
+persist.sys.shutdown.mode=hibernate
+dev.bootcomplete=0
+
+# Change Proximity Sensor Response time
+mot.proximity.delay=0
+ro.lge.proximity.delay=23
+
+# Use your GPU to process the UI instead of the CPU 
+# This helps the CPU to process more non visual information
+debug.sf.hw = 1
+
+# Cache and Buffering tweak [Internet Tweak]
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+
+# Faster Video Streaming
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=false
+
+# Better Audio and Video performance
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.capture.maxres=8m
+ro.media.panorama.defres=3264x1840
+ro.media.panorama.frameres=1280x720
+ro.camcorder.videoModes=true
+ro.media.enc.hprof.vid.fps=65
+
+# Multiuser
+fw.max_users=2
+fw.show_multiuserui=1
+
+keyguard.no_require_sim=true
+ro.build.selinux=1
+ro.usb.host=1
